@@ -1,0 +1,10 @@
+with open("ind vs aus test3.info",'rt') as fp:
+   print(fp.tell())
+   print(fp.read())
+   print(fp.tell())
+   print(fp.seek())
+   print(fp.seek(100))
+   print('File pointer is now at:',fp.tell())
+   print(f'Now i am printing 100 characters from {fp.tell()} to {fp.tell()+100}',fp.read(100))
+   print('now file pointer is at',fp.tell())
+   print(fp.tell())
